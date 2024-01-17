@@ -3,84 +3,31 @@ A unified management service for app &amp; games so you can focus on what you do
 
 Run your games more efficiently while saving development resources by harnessing operations tools like authentication, payment, and more.
 
-## Why NBase?
 
-- [On-the-fly paywalls price testing](https://docs.adapty.io/docs/ab-test?utm_source=github&utm_medium=referral&utm_campaign=AdaptySDK-Unity). Test different prices, duration, offers, messages, and designs simultaneously, all without new app releases.
-- [Full customer's payment history](https://docs.adapty.io/docs/profiles-crm?utm_source=github&utm_medium=referral&utm_campaign=AdaptySDK-Unity). Explore the user's payment events from the trial start to subscription cancellation or billing issues.
-- [In-app purchase data integration](https://docs.adapty.io/docs/events?utm_source=github&utm_medium=referral&utm_campaign=AdaptySDK-Unity). Send subscription events to 3rd-party analytics, attribution, and ad services with no coding, even if the user uninstalls the app.
-- [No server code implementation](https://docs.adapty.io/v1.0/docs/unity-configuring?utm_source=github&utm_medium=referral&utm_campaign=AdaptySDK-Unity). Integrate in-app purchases with server-side receipt validation in minutes. Apple Promotional Offers supported out-of-the-box.
-- [Advanced analytics](https://docs.adapty.io/docs/analytics-charts?utm_source=github&utm_medium=referral&utm_campaign=AdaptySDK-Unity). Analyze your app real-time metrics with advanced filters, such as Ad network, Ad campaign, country, A/B test, etc.
+## 요구 사양<a name="요구사양"></a>
 
-<h3 align="center" style="border-bottom: none; margin-top: -15px; margin-bottom: -15px; font-size: 150%">
-<a href="https://adapty.io/schedule-demo?utm_source=github&utm_medium=referral&utm_campaign=AdaptySDK-iOS_schedule-demo">Talk to Us to Learn More</a>
-</h3>
+Unity용 GAMEPOT SDK를 사용하기 위한 요구 사양은 다음과 같습니다.
 
-## Integrate IAPs Within a Few Hours Without Server Coding
+* 최소 사양: 2020.3.0 이상
+(하위 버전의 Unity 지원이 필요하면 [문의채널](https://www.ncloud.com/support/question){target="_blank"}로 문의해 주시기 바랍니다. )
 
-**Adapty handles everything, from free trials to refunds, in a simple, developer-friendly SDK.**
 
-- Free trials, upgrades, downgrades, crossgrades, family sharing, renewals, promo offers, intro offers, promo codes, and more – Adapty SDK does everything with a single line of code.
-- Easy subscription management.
-- One-time purchases and lifetime subscriptions supported.
-- Sync subscribers' states across iOS, Android, and Web.
+## SDK 설치 및 환경 구성<a name="SDK설치및환경구성"></a>
 
-## Price Testing for In-app Purchases on Unity Without App Releases
+NBase Unity SDK를 설치한 후 환경을 구성하여 GAMEPOT 대시보드와 게임을 연동하고 게임 개발에 필요한 기능을 사용할 수 있습니다.
 
-- Optimize in-app subscriptions with the paywall A/B testing. Conversions, trials, revenue, cancellations, and more — everything is calculated for you: each paywall and each A/B test.
-- Change images, colors, layouts, and literally anything with a custom JSON. Configure different prices, trial periods, promo offers, and more in Adapty without app releases.
+NBase SDK에서 지원하는 언어는 아래와 같습니다.
+ - 한국어, 영어, 이탈리아어, 태국어 ,베트남어, 일본어, 중국어(간체/번체), 인도네시아어, 독일어, 스페인어, 프랑스어
 
-## Paywall A/B Testing on Unity
+앱 실행 시 디바이스의 언어에 따라 SDK 내 지원 언어로 표기되며 미지원 언어는 영어로 표기됩니다.
+ 
+### SDK 설치<a name="SDK설치"></a>
 
-![Adapty: In-app subscriptions with paywall A/B testing](https://adapty-portal-media-production.s3.amazonaws.com/github/ab-test-new.png)
 
-- Conversions, trials, revenue, cancellations, and more everything is calculated for you: each paywall and each A/B test.
-- Change images, colors, layouts and literally anything with a custom JSON.
-- Price testing is seamlessly integrated for any platform.
+NBase Unity SDK를 설치하고 Unity에서 프로젝트를 구성하는 방법은 다음과 같습니다.
 
-## Real-time Analytics for Your Unity App
+1. 관리자 계정으로 대시보드에 로그인해 주십시오.
+2. **SDK 다운로드 > Unity** 메뉴를 차례대로 클릭한 후 **다운로드** 를 클릭해 주십시오.
+3. Unity에서 **Assets > Import Package > Custom Package...** 메뉴를 차례대로 클릭한 후 nbase-unity-plugin-[version].unitypackage 파일을 불러와 주십시오.
+4. 게임팟 3.0 부터는 maven 배포와 swift package manager 을 통해 배포되며 아래에서 각 기기별로 설정이 간단한 설정만으로 수십가지의 외부 라이브러리와 통합이 가능합니다.
 
-![Adapty: How Adapty works](https://adapty-portal-media-production.s3.amazonaws.com/github/analyticss.gif)
-
-- Manage the subscription's state without managing transactions.
-- 99.5% accuracy with App Store Connect.
-- View and analyze data by attributes, such as status, channels, campaigns, and more.
-- Filter, group, and measure metrics by attribution, platform, custom users' segments, and more in a few clicks.
-
-## Requirements
-
-- Unity 2019.4.38f1+ (older versions might work, the plugin was tested with this version)
-- [External Dependency Manager plugin](https://github.com/googlesamples/unity-jar-resolver)
-
-## Mobile App Monetization's Largest Community
-
-Ask questions, participate in discussions about Adapty-related topics, become a part of our community for mobile app developers and marketers. Learn how to monetize your app, ask questions, post jobs, read industry news and analytics. Ad free.
-
-<a href="https://discord.gg/subscriptions-hub"><img src="https://adapty-portal-media-production.s3.amazonaws.com/github/join-discord.svg" /></a>
-
-## Getting Started
-
-Please refer to our documentation to install and configure Adapty SDK. Set up purchases in hours instead of weeks :rocket:
-
-- [Installation](https://docs.adapty.io/docs/unity-installation)
-- [Configuring Adapty SDK](https://docs.adapty.io/docs/unity-configuring)
-- [Displaying Paywalls & Products](https://docs.adapty.io/docs/unity-displaying-products)
-- [Making Purchases](https://docs.adapty.io/docs/unity-making-purchases)
-- [Subscription Status](https://docs.adapty.io/docs/unity-subscription-status)
-- [Identifying Users](https://docs.adapty.io/docs/unity-identifying-users)
-- [Attribution Integration](https://docs.adapty.io/docs/attribution-integration)
-- [Setting User Attributes](https://docs.adapty.io/docs/setting-user-attributes)
-- [Analytics Integration](https://docs.adapty.io/docs/analytics-integration)
-- [Observer Mode](https://docs.adapty.io/docs/unity-observer-mode)
-
-## Contributing
-
-- Feel free to open an issue, we check all of them or drop us an email at [support@adapty.io](mailto:support@adapty.io) and tell us everything you want.
-- Want to suggest a feature? Just contact us or open an issue in the repo.
-
-## Like Adapty SDK?
-
-So do we! Feel free to star the repo ⭐️⭐️⭐️ and make our developers happy!
-
-## License
-
-Adapty is available under the MIT license. [See LICENSE](https://github.com/adaptyteam/AdaptySDK-Unity/blob/main/LICENSE) for details.
